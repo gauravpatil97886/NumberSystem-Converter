@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Number System Converter</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <script src="script.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    
+</head>
+<body>
+
+      <div class="container converter-container">
+        <h1 class="converter-title">Number System Converter</h1>
+        <br>
+        <br>
+
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="converter-box">
+                    <div class="form-group">
+                      <strong><label for="inputNumber">Enter a number:</label></strong>  
+                        <input type="text" class="form-control" id="inputNumber" placeholder="Enter a number">
+                    </div>
+                    <div class="form-group">
+                     <strong>   <label for="conversionType">Select conversion type:</label></strong>
+                        <select class="form-control" id="conversionType">
+                          <strong>  <option value="binaryToDecimal">Binary to Decimal</option>
+                        <option value="binaryToOctal">Binary to Octal</option>
+                        <option value="binaryToHexadecimal">Binary to Hexadecimal</option>
+                        <option value="decimalToBinary">Decimal to Binary</option>
+                        <option value="decimalToOctal">Decimal to Octal</option>
+                        <option value="decimalToHexadecimal">Decimal to Hexadecimal</option>
+                        <option value="octalToDecimal">Octal to Decimal</option>
+                        <option value="octalToBinary">Octal to Binary</option>
+                        <option value="octalToHexadecimal">Octal to Hexadecimal</option>
+                        <option value="hexadecimalToDecimal">Hexadecimal to Decimal</option>
+                        <option value="hexadecimalToBinary">Hexadecimal to Binary</option>
+                        <option value="hexadecimalToOctal">Hexadecimal to Octal</option>
+                    </strong>
+                    </select>                        </select>
+                    </div>
+                    <button class="btn btn-primary btn-block animate-btn" onclick="convert()">Convert</button>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="converter-box result-box animate-bg">
+                    <div id="conversionResult"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    
+    
+ 
+    <footer class="footer">
+    <div class="container">
+      <p>
+        &copy; <span id="year"></span> Gaurav Patil. All rights reserved.
+      </p>
+    </div>
+  </footer>
+    <ul class="back">
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+</ul>   
+<script type="text/javascript"></script>
+ 
+<script type="text/javascript">
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+</script>
+
+</body>
+</html>
